@@ -1,2 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranav AI Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #334155;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 28px;
+    }
+
+    header p {
+      color: #94a3b8;
+      margin-top: 8px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .welcome {
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .welcome p {
+      color: #94a3b8;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 15px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card .icon {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card button:hover {
+      background: #0369a1;
+    }
+
+    .about {
+      margin-top: 40px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 15px;
+      padding: 25px;
+    }
+
+    .about h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      color: #64748b;
+      border-top: 1px solid #334155;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      .welcome h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🤖 Pranav AI Dashboard</h1>
+    <p>Your Personal AI Tools Platform</p>
+  </header>
+
+  <div class="container">
+
+    <div class="welcome">
+      <h2>Welcome to Pranav AI 🚀</h2>
+      <p>Explore useful AI tools and boost your productivity.</p>
+    </div>
+
+    <div class="tools">
+
+      <div class="card">
+        <div class="icon">✍️</div>
+        <h3>AI Writer</h3>
+        <p>Generate emails, captions, ideas and creative content using AI.</p>
+        <button onclick="showMessage('AI Writer')">Try Now</button>
+      </div>
+
+      <div class="card">
+        <div class="icon">🖼️</div>
+        <h3>AI Image Generator</h3>
+        <p>Create beautiful images and designs from simple text prompts.</p>
+        <button onclick="showMessage('AI Image Generator')">Try Now</button>
+      </div>
+
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>AI Summarizer</h3>
+        <p>Summarize long documents, articles and text quickly.</p>
+        <button onclick="showMessage('AI Summarizer')">Try Now</button>
+      </div>
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>AI Code Assistant</h3>
+        <p>Get help writing, understanding and improving your code.</p>
+        <button onclick="showMessage('AI Code Assistant')">Try Now</button>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>AI Translator</h3>
+        <p>Translate text between different languages easily.</p>
+        <button onclick="showMessage('AI Translator')">Try Now</button>
+      </div>
+
+      <div class="card">
+        <div class="icon">💡</div>
+        <h3>AI Idea Generator</h3>
+        <p>Generate business ideas, content ideas and project concepts.</p>
+        <button onclick="showMessage('AI Idea Generator')">Try Now</button>
+      </div>
+
+    </div>
+
+    <div class="about">
+      <h2>About This Platform</h2>
+      <p>
+        Pranav AI Dashboard is a personal AI tools platform designed
+        to bring useful AI features into one simple and modern dashboard.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Pranav AI Dashboard. All rights reserved.
+  </footer>
+
+  <script>
+    function showMessage(toolName) {
+      alert(toolName + " will be available soon! 🚀");
+    }
+  </script>
+
+</body>
+</html>
