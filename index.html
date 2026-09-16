@@ -16,79 +16,57 @@
 
   box-sizing: border-box;
 
-  margin: 0;
-
-  padding: 0;
-
 }
 
 body {
 
+  margin: 0;
+
   font-family: Arial, sans-serif;
 
-  background: #0b1120;
+  background: #071a3a;
 
-  color: #f1f5f9;
-
-  min-height: 100vh;
+  color: white;
 
 }
 
 header {
 
-  background: linear-gradient(135deg, #172554, #1e3a8a);
-
-  padding: 28px 20px;
-
   text-align: center;
 
-  border-bottom: 1px solid #334155;
+  padding: 35px 20px;
+
+  background: linear-gradient(135deg, #174ea6, #2563eb);
 
 }
 
 header h1 {
 
-  font-size: 28px;
+  margin: 0;
 
-  color: #38bdf8;
-
-  margin-bottom: 8px;
+  font-size: 32px;
 
 }
 
 header p {
 
-  color: #cbd5e1;
+  color: #dbeafe;
 
 }
 
 .container {
 
-  max-width: 1150px;
+  max-width: 1200px;
 
   margin: auto;
 
-  padding: 25px 20px;
+  padding: 30px 20px;
 
 }
 
 .welcome {
 
   margin-bottom: 25px;
-
-}
-
-.welcome h2 {
-
-  font-size: 24px;
-
-  margin-bottom: 8px;
-
-}
-
-.welcome p {
-
-  color: #94a3b8;
 
 }
 
@@ -104,41 +82,43 @@ header p {
 
 }
 
-.stat {
+.stat, .card {
 
-  background: #172033;
+  background: #102b5c;
 
-  border: 1px solid #334155;
+  border: 1px solid #3565a8;
 
-  border-radius: 12px;
+  border-radius: 15px;
 
-  padding: 20px;
+  padding: 22px;
 
 }
 
 .stat h3 {
 
-  color: #94a3b8;
+  margin: 0;
 
-  font-size: 14px;
+  color: #bfdbfe;
 
-  margin-bottom: 10px;
+  font-size: 15px;
 
 }
 
 .stat strong {
 
+  display: block;
+
   font-size: 28px;
 
   color: #38bdf8;
 
+  margin-top: 10px;
+
 }
 
-.section-title {
+h2 {
 
-  font-size: 20px;
-
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
 }
 
@@ -152,53 +132,19 @@ header p {
 
 }
 
-.card {
-
-  background: #172033;
-
-  border: 1px solid #334155;
-
-  border-radius: 14px;
-
-  padding: 22px;
-
-  transition: 0.2s;
-
-}
-
-.card:hover {
-
-  transform: translateY(-3px);
-
-  border-color: #38bdf8;
-
-}
-
-.card .icon {
-
-  font-size: 32px;
-
-  margin-bottom: 12px;
-
-}
-
 .card h3 {
 
-  font-size: 18px;
-
-  margin-bottom: 10px;
+  font-size: 20px;
 
 }
 
 .card p {
 
-  color: #94a3b8;
+  color: #cbd5e1;
 
-  font-size: 14px;
+  line-height: 1.5;
 
-  line-height: 1.6;
-
-  margin-bottom: 18px;
+  min-height: 48px;
 
 }
 
@@ -210,13 +156,13 @@ button {
 
   border: none;
 
-  padding: 10px 16px;
+  padding: 12px 18px;
 
   border-radius: 8px;
 
   cursor: pointer;
 
-  font-weight: bold;
+  font-size: 15px;
 
 }
 
@@ -226,103 +172,61 @@ button:hover {
 
 }
 
-.panel {
+.tool-panel {
 
   display: none;
 
-  background: #111827;
+  margin-top: 30px;
 
-  border: 1px solid #334155;
+  background: #102b5c;
 
-  border-radius: 14px;
+  border: 1px solid #38bdf8;
 
-  padding: 22px;
+  border-radius: 15px;
 
-  margin-top: 25px;
-
-}
-
-.panel.active {
-
-  display: block;
-
-}
-
-.panel h3 {
-
-  margin-bottom: 12px;
-
-  color: #38bdf8;
-
-}
-
-textarea, input, select {
-
-  width: 100%;
-
-  background: #1e293b;
-
-  color: white;
-
-  border: 1px solid #475569;
-
-  border-radius: 8px;
-
-  padding: 12px;
-
-  margin: 8px 0 15px;
-
-  font-size: 14px;
+  padding: 25px;
 
 }
 
 textarea {
 
-  min-height: 130px;
+  width: 100%;
 
-  resize: vertical;
+  min-height: 160px;
+
+  margin: 12px 0;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  border: 1px solid #64748b;
+
+  background: #071a3a;
+
+  color: white;
+
+  font-size: 15px;
 
 }
 
 .result {
 
-  background: #172033;
+  margin-top: 20px;
 
-  border-left: 4px solid #38bdf8;
+  padding: 18px;
 
-  padding: 15px;
+  background: #0b234b;
 
-  margin-top: 15px;
+  border-radius: 10px;
 
   line-height: 1.7;
-
-  color: #cbd5e1;
-
-  white-space: pre-line;
-
-}
-
-footer {
-
-  text-align: center;
-
-  padding: 30px;
-
-  color: #64748b;
-
-  font-size: 13px;
 
 }
 
 @media (max-width: 800px) {
 
-  .stats {
-
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-
-  .tools {
+  .stats, .tools {
 
     grid-template-columns: 1fr;
 
@@ -360,7 +264,7 @@ footer {
 
       <h3>Applications</h3>
 
-      <strong id="applications">0</strong>
+      <strong>0</strong>
 
     </div>
 
@@ -368,7 +272,7 @@ footer {
 
       <h3>Interviews</h3>
 
-      <strong id="interviews">0</strong>
+      <strong>0</strong>
 
     </div>
 
@@ -376,7 +280,7 @@ footer {
 
       <h3>Offers</h3>
 
-      <strong id="offers">0</strong>
+      <strong>0</strong>
 
     </div>
 
@@ -390,93 +294,49 @@ footer {
 
   </div>
 
-  <h2 class="section-title">Career Tools</h2>
+  <h2>Career Tools</h2>
 
   <div class="tools">
 
     <div class="card">
 
-      <div class="icon">📄</div>
+      <h3>📄 Resume Analyzer</h3>
 
-      <h3>Resume Analyzer</h3>
+      <p>Review your resume and identify areas for improvement.</p>
 
-      <p>Compare your resume with a job description and identify improvement areas.</p>
-
-      <button onclick="showPanel('resumePanel')">Open Tool</button>
+      <button onclick="openTool('resume')">Open Tool</button>
 
     </div>
 
     <div class="card">
 
-      <div class="icon">🎯</div>
+      <h3>🎯 Job Match Assistant</h3>
 
-      <h3>Job Match Assistant</h3>
+      <p>Compare a job description with your experience.</p>
 
-      <p>Review a job description and identify how well it matches your experience.</p>
-
-      <button onclick="showPanel('matchPanel')">Open Tool</button>
+      <button onclick="openTool('job')">Open Tool</button>
 
     </div>
 
     <div class="card">
 
-      <div class="icon">🎤</div>
+      <h3>🎤 Interview Prep</h3>
 
-      <h3>Interview Prep</h3>
+      <p>Prepare questions and answers for your next interview.</p>
 
-      <p>Generate a structured preparation checklist for your next interview.</p>
-
-      <button onclick="showPanel('interviewPanel')">Open Tool</button>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">📊</div>
-
-      <h3>Application Tracker</h3>
-
-      <p>Track your applications, interviews, and offers in one place.</p>
-
-      <button onclick="showPanel('trackerPanel')">Open Tool</button>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">✍️</div>
-
-      <h3>Professional Writer</h3>
-
-      <p>Create professional follow-up messages, recruiter emails, and LinkedIn content.</p>
-
-      <button onclick="showPanel('writerPanel')">Open Tool</button>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">💼</div>
-
-      <h3>Career Profile</h3>
-
-      <p>Maintain your target roles, skills, experience, and career preferences.</p>
-
-      <button onclick="showPanel('profilePanel')">Open Tool</button>
+      <button onclick="openTool('interview')">Open Tool</button>
 
     </div>
 
   </div>
 
-  <div id="resumePanel" class="panel">
+  <div id="resume" class="tool-panel">
 
-    <h3>📄 Resume Analyzer</h3>
+    <h2>📄 Resume Analyzer</h2>
 
-    <p>Paste your resume and the job description below.</p>
+    <p>Paste your resume below to begin.</p>
 
-    <textarea id="resumeText" placeholder="Paste your resume here..."></textarea>
-
-    <textarea id="resumeJob" placeholder="Paste the job description here..."></textarea>
+    <textarea placeholder="Paste your resume text here..."></textarea>
 
     <button onclick="analyzeResume()">Analyze Resume</button>
 
@@ -484,313 +344,129 @@ footer {
 
   </div>
 
-  <div id="matchPanel" class="panel">
+  <div id="job" class="tool-panel">
 
-    <h3>🎯 Job Match Assistant</h3>
+    <h2>🎯 Job Match Assistant</h2>
 
-    <textarea id="matchJob" placeholder="Paste the job description here..."></textarea>
+    <p>Paste the job description below.</p>
 
-    <button onclick="analyzeMatch()">Check Match</button>
+    <textarea placeholder="Paste the job description here..."></textarea>
 
-    <div id="matchResult" class="result" style="display:none;"></div>
+    <button onclick="matchJob()">Check Job Match</button>
+
+    <div id="jobResult" class="result" style="display:none;"></div>
 
   </div>
 
-  <div id="interviewPanel" class="panel">
+  <div id="interview" class="tool-panel">
 
-    <h3>🎤 Interview Preparation</h3>
+    <h2>🎤 Interview Prep</h2>
 
-    <input id="interviewRole" placeholder="Enter target role, e.g. R2R Manager">
+    <p>Paste a job description to prepare for the interview.</p>
 
-    <button onclick="generateInterview()">Generate Preparation Plan</button>
+    <textarea placeholder="Paste the job description here..."></textarea>
+
+    <button onclick="prepareInterview()">Generate Preparation</button>
 
     <div id="interviewResult" class="result" style="display:none;"></div>
 
   </div>
 
-  <div id="trackerPanel" class="panel">
-
-    <h3>📊 Application Tracker</h3>
-
-    <input id="companyName" placeholder="Company name">
-
-    <input id="jobTitle" placeholder="Job title">
-
-    <select id="jobStatus">
-
-      <option>Applied</option>
-
-      <option>Interview</option>
-
-      <option>Offer</option>
-
-      <option>Rejected</option>
-
-    </select>
-
-    <button onclick="addApplication()">Add Application</button>
-
-    <div id="trackerResult" class="result"></div>
-
-  </div>
-
-  <div id="writerPanel" class="panel">
-
-    <h3>✍️ Professional Writer</h3>
-
-    <textarea id="writerPurpose" placeholder="What do you want to write? Example: Follow-up email to recruiter after interview"></textarea>
-
-    <button onclick="generateMessage()">Generate Draft</button>
-
-    <div id="writerResult" class="result" style="display:none;"></div>
-
-  </div>
-
-  <div id="profilePanel" class="panel">
-
-    <h3>💼 Career Profile</h3>
-
-    <p><strong>Target roles:</strong> R2R Manager, GL Accounting Manager, Accounting Manager, Finance Manager, Financial Reporting Manager, Finance Transformation Manager</p>
-
-    <p style="margin-top:10px;"><strong>Experience:</strong> 14+ years in finance and accounting</p>
-
-    <p style="margin-top:10px;"><strong>Core skills:</strong> R2R, reconciliations, reporting, TB review, SOX, BlackLine, VAT, asset accounting, lease accounting</p>
-
-    <p style="margin-top:10px;"><strong>Target CTC:</strong> ₹20 LPA and above</p>
-
-  </div>
-
 </div>
-
-<footer>
-
-  Pranav Career AI • Built for professional growth 🚀
-
-</footer>
 
 <script>
 
-function showPanel(id) {
+function openTool(tool) {
 
-  document.querySelectorAll('.panel').forEach(panel => {
+  document.querySelectorAll('.tool-panel').forEach(panel => {
 
-    panel.classList.remove('active');
+    panel.style.display = 'none';
 
   });
 
-  document.getElementById(id).classList.add('active');
+  document.getElementById(tool).style.display = 'block';
 
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  document.getElementById(tool).scrollIntoView({
+
+    behavior: 'smooth'
+
+  });
 
 }
 
 function analyzeResume() {
 
-  const resume = document.getElementById('resumeText').value.trim();
-
-  const job = document.getElementById('resumeJob').value.trim();
-
   const result = document.getElementById('resumeResult');
 
-  if (!resume || !job) {
-
-    alert('Please paste both your resume and the job description.');
-
-    return;
-
-  }
-
   result.style.display = 'block';
 
-  result.innerText =
+  result.innerHTML = `
 
-`Resume Review Checklist
+    <strong>Resume Review Checklist</strong><br><br>
 
-1. Check whether your resume includes keywords from the job description.
+    ✅ Check whether your resume has measurable achievements.<br>
 
-2. Highlight measurable achievements, team size, process improvements, and reporting responsibilities.
+    ✅ Highlight R2R, GL Accounting, reconciliations, reporting, SOX and BlackLine experience.<br>
 
-3. Ensure your experience is aligned with the target role.
+    ✅ Add relevant keywords from the job description.<br>
 
-4. Add relevant tools such as SAP, BlackLine, Excel, Power BI, or other tools you genuinely use.
+    ✅ Keep the resume concise and achievement-focused.<br><br>
 
-5. Keep the resume concise and achievement-focused.
+    <em>This is a basic local version. We will connect real AI analysis next.</em>
 
-Note: This first version provides a structured review framework. AI-powered analysis will be connected in the next stage.`;
+  `;
 
 }
 
-function analyzeMatch() {
+function matchJob() {
 
-  const job = document.getElementById('matchJob').value.trim();
-
-  const result = document.getElementById('matchResult');
-
-  if (!job) {
-
-    alert('Please paste a job description.');
-
-    return;
-
-  }
+  const result = document.getElementById('jobResult');
 
   result.style.display = 'block';
 
-  result.innerText =
+  result.innerHTML = `
 
-`Job Match Review
+    <strong>Job Match Review</strong><br><br>
 
-Review these areas:
+    🎯 Compare the JD with your R2R and finance leadership experience.<br>
 
-• Role seniority and leadership expectations
+    📌 Identify required skills you already have.<br>
 
-• R2R / GL accounting responsibilities
+    ⚠️ Identify missing or weak requirements.<br>
 
-• Financial reporting and month-end close
+    💼 Check role level, location and CTC suitability.<br><br>
 
-• Reconciliations and controls
+    <em>This is a basic local version. Real AI matching will be added next.</em>
 
-• ERP, BlackLine, Excel, and reporting tools
-
-• Stakeholder and team-management requirements
-
-• CTC and location suitability
-
-Next step: Compare each requirement against your actual experience before applying.`;
+  `;
 
 }
 
-function generateInterview() {
-
-  const role = document.getElementById('interviewRole').value.trim();
+function prepareInterview() {
 
   const result = document.getElementById('interviewResult');
 
-  if (!role) {
-
-    alert('Please enter a target role.');
-
-    return;
-
-  }
-
   result.style.display = 'block';
 
-  result.innerText =
+  result.innerHTML = `
 
-`Interview Preparation Plan — ${role}
+    <strong>Interview Preparation Areas</strong><br><br>
 
-1. Prepare your professional introduction.
+    1. Tell me about your R2R experience.<br>
 
-2. Explain your current team structure and responsibilities.
+    2. Explain your month-end close process.<br>
 
-3. Prepare examples of month-end close and R2R activities.
+    3. How do you review reconciliations?<br>
 
-4. Revise reconciliations, reporting, controls, and variance analysis.
+    4. How do you manage a team?<br>
 
-5. Prepare a STAR story about process improvement.
+    5. Explain SOX controls and audit readiness.<br><br>
 
-6. Prepare a STAR story about handling a difficult stakeholder.
+    <em>This is a basic local version. Real AI-generated preparation will be added next.</em>
 
-7. Prepare questions about the role, team, systems, and expectations.`;
-
-}
-
-function addApplication() {
-
-  const company = document.getElementById('companyName').value.trim();
-
-  const title = document.getElementById('jobTitle').value.trim();
-
-  const status = document.getElementById('jobStatus').value;
-
-  const result = document.getElementById('trackerResult');
-
-  if (!company || !title) {
-
-    alert('Please enter company and job title.');
-
-    return;
-
-  }
-
-  let applications = JSON.parse(localStorage.getItem('careerApplications') || '[]');
-
-  applications.push({
-
-    company: company,
-
-    title: title,
-
-    status: status
-
-  });
-
-  localStorage.setItem('careerApplications', JSON.stringify(applications));
-
-  updateStats();
-
-  result.innerText = Added: ${company} — ${title} (${status});
-
-  document.getElementById('companyName').value = '';
-
-  document.getElementById('jobTitle').value = '';
+  `;
 
 }
-
-function updateStats() {
-
-  const applications = JSON.parse(localStorage.getItem('careerApplications') || '[]');
-
-  document.getElementById('applications').innerText = applications.length;
-
-  document.getElementById('interviews').innerText =
-
-    applications.filter(a => a.status === 'Interview').length;
-
-  document.getElementById('offers').innerText =
-
-    applications.filter(a => a.status === 'Offer').length;
-
-}
-
-function generateMessage() {
-
-  const purpose = document.getElementById('writerPurpose').value.trim();
-
-  const result = document.getElementById('writerResult');
-
-  if (!purpose) {
-
-    alert('Please describe what you want to write.');
-
-    return;
-
-  }
-
-  result.style.display = 'block';
-
-  result.innerText =
-
-`Professional Draft
-
-Subject: Following Up Regarding the Opportunity
-
-Hi [Name],
-
-I hope you are doing well.
-
-I am writing regarding ${purpose}. I would appreciate any update you can share and remain interested in discussing the opportunity further.
-
-Please let me know if you need any additional information from my side.
-
-Best regards,
-
-Pranav`;
-
-}
-
-updateStats();
 
 </script>
 
